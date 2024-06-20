@@ -3,7 +3,7 @@ function NavBarHome(){
         <>
         <nav className="nav">
         <div className="leftNavbar">
-            <h1 className="titleNavbar"><i className="iconNavbar"></i>COVIMAP</h1>
+            <img src="./src/assets/generalHome/logoConTextoBlanco.png"className="iconNavbar"/>
         </div>
         <div className="rightNavbar">
             <ul>
