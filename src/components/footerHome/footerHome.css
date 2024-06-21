@@ -1,3 +1,106 @@
-hnf{
-    color: antiquewhite;
+.footer {
+  background-color: #1a2b4b;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.logo-section {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 150px; 
+  margin-top: 30px;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #515184;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #515184;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social-icon:hover{
+background-color: white;
+color: #515184;
+}
+
+.quick-links, .about, .help {
+  max-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.footer-section ul li {
+  margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+  color: #515184;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color:white;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #515184;
+  padding-top: 20px;
+  font-size: 14px;
+}
+.footer-bottom p {
+  color:#515184;
+  margin-right: 10px;
+}
+.footer-bottom a {
+  color: #515184;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+  color: white;
 }
