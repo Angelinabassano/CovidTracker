@@ -6,10 +6,12 @@ import niñoFiebre from "../../assets/generalHome/niñoFiebre.png"
 import pulmones from "../../assets/generalHome/pulmones.png"
 import sistemaHumano from "../../assets/generalHome/sistemaHumanoTos.png"
 import gráfico from "../../assets/generalHome/gráfico.svg"
+import youtube from "../../assets/generalHome/logo-youtube-blanco.png"
 
 const HomeImages ={
   fondoHome,
   logo,
+  youtube,
   mujerTos,
   niñoFiebre,
   niñoTos,
