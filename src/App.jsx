@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
-import BlueCardHome from './components/blueCardHome/BlueCardHome';
+
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import SlideCardHome from './components/slideCardsHome/SlideCardHome';
 
 function App() {
-  return (
-    <div className="App">
-      <BlueCardHome />
-    </div>
-  );
+    return (
+        <div className="App">
+            <SlideCardHome />
+        </div>
+    );
 }
 
 export default App;
