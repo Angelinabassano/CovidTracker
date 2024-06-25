@@ -41,4 +41,16 @@ li{
 p{
     margin:100px;
 }
+.burgerNav{
+    display:none;
+}
 
+@media screen and (width <= 991px) {
+    .burgerNav{
+        display:flex;
+        right: 5px;
+    }
+    .rightNavbar {
+      display: none;
+    }
+  }
