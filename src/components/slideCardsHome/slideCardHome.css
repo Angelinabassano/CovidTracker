@@ -1,55 +1,75 @@
 .slide-card-home {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 80px; 
+    padding-bottom: 80px; 
     background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-title {
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center; 
 }
 
 .section-title h5 {
     animation: fadeIn 1s;
     animation-delay: 0s;
-    color: #515184; /* Color para el h5 (ejemplo: Tomato) */
+    color: #515184; 
 }
 
 .section-title h2 {
     animation: fadeIn 1s;
     animation-delay: 0.5s;
-    color: #515184; /* Color para el h2 (ejemplo: SteelBlue) */
+    color: #515184; 
 }
 
 .row {
-    display: flex; /* Usar flexbox para alinear los elementos en fila */
-    justify-content: center; /* Centrar las tarjetas horizontalmente */
-    flex-wrap: nowrap; /* No permitir que las tarjetas se envuelvan en múltiples líneas */
-    gap: 0.1rem; /* Reducir el espacio entre las tarjetas */
+    display: flex;
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    gap: 0.25px; 
 }
 
 .slide-card-home-content {
-    flex: 0 0 30%; /* Hacer que cada tarjeta ocupe el 30% del ancho del contenedor */
-    max-width: 30%; /* Asegurarse de que cada tarjeta no exceda el 30% del ancho del contenedor */
-    padding: 2rem; /* Reducir el relleno para hacer las tarjetas más pequeñas */
+    flex: 0 0 55%; 
+    max-width: 55%; 
+    padding: 15px; 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0.2rem; /* Reducir el margen para acercar las tarjetas */
+    margin: 5px;
+   
 }
 
 .slide-card-home-content img {
-    max-width: 80px; /* Ajustar el tamaño de la imagen */
-    margin-bottom: 0.5rem; /* Ajustar el margen inferior */
+    max-width: 80px; 
+    margin-bottom: 5px; 
 }
 
+
 .slide-card-home-content h4 {
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente */
-    margin-bottom: 0.5rem; /* Ajustar el margen inferior */
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    color: #121158; 
 }
 
 .slide-card-home-content p {
-    font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
-    color: #666;
+    font-size: 0.9rem; 
+    color:  #515184;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap; 
+    }
+    .slide-card-home-content {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin: 10px 0; 
+}
+
+@media (max-width: 576px) {
+    .slide-card-home-content {
+        padding: 10px; 
+    }
 }
 
 @keyframes fadeIn {
@@ -61,4 +81,5 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
 }
