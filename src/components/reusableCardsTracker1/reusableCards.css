@@ -1,3 +1,37 @@
-dd{
-    color: antiquewhite;
+*, *::before, *::after {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    height:120px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid rgb(236, 235, 235);
+    box-shadow: 0 15px 30px 0 rgba(20, 50, 90, 0.05);
+    margin: 20px;
+    
+}
+.label{
+    margin: 10px 0 12px 13px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.value{
+    margin: 0 0 0 13px;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+.imgIcon{
+    width:140px;
+    height:140px;
+    opacity: 0.2;
+    position: relative;
+    top: -24px;
+    left: 24px;
+
 }
