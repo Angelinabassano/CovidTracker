@@ -4,7 +4,7 @@ import reusableCardsImage from "../../utils/images/imagesTracker1.js";
 import ReusableCards from "./ReusableCards.jsx";
 import "../../components/reusableCardsTracker1/reusableCards.css"
 
-const List = () => {
+const ReusableCardsPage = () => {
   const infoCard = [
     { icon: imagesTracker1.covidBlueDark, label: 'Total Cases', value: '374111576', color: "#3639AE" },
     { icon: imagesTracker1.covidRed, label: 'Total Deaths', value: '4', color: '#ff0000' },
@@ -15,17 +15,22 @@ const List = () => {
    
   ];
   return (
+    <>
+    <div>
+      <select className="selectCountry"></select>
+    </div>
     <div className="cardsContainer">
       {infoCard.map((infoCard, index) => (
         <ReusableCards
-          key={index}
-          icon={infoCard.icon}
-          label={infoCard.label}
-          value={infoCard.value}
-          color={infoCard.color}
+        key={index}
+        icon={infoCard.icon}
+        label={infoCard.label}
+        value={infoCard.value}
+        color={infoCard.color}
         />
       ))}
     </div>
+    </>
   );
 };
-export default List;
+export default ReusableCardsPage;

@@ -6,12 +6,12 @@ const ReusableCards = ({ icon, label, value, color }) => {
   return (
     <>
     
-    <div className="card">
-      <div className="info" >
-        <h5 className="label">{label}</h5>
-        <h3 className="value" style={{ color: color }}>{value}</h3>
+    <div className="reusableCard">
+      <div>
+        <h5 className="labelCard">{label}</h5>
+        <h3 className="valueCard" style={{ color: color }}>{value}</h3>
       </div> 
-      <div className="icon">
+      <div>
         <img className="imgIcon" src={icon} alt={label} /> 
       </div>
     </div>
