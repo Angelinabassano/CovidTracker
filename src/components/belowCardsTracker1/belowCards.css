@@ -1,3 +1,72 @@
-hnf{
-    color: antiquewhite;
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Asegura que el contenedor se mantenga en la parte inferior */
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.content {
+  flex: 1;
+}
+
+.stat-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: end; /* Alinea las tarjetas a la derecha */
+  padding: 20px; /* Espacio alrededor del contenedor de tarjetas */
+  margin-left: auto; /* Alinea todo el contenedor a la derecha */
+}
+
+.stat-list > div:nth-child(4),
+.stat-list > div:nth-child(5) {
+  grid-column: span 1; /* Ocupan una columna cada una en la segunda fila */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Ajusta el tamaño de las tarjetas */
+  height: 100px; /* Ajusta el tamaño de las tarjetas */
+}
+
+.card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  width: 100%; /* Asegura que el contenedor del icono ocupe todo el ancho de la tarjeta */
+  margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+}
+
+.card .icon .imagen {
+  width: 40px; /* Tamaño deseado para el ícono */
+  height: 40px;
+}
+
+.card .info {
+  text-align: center; /* Alinea el texto a la izquierda */
+  width: 100%;
+}
+
+.card .info h3 {
+  font-size: 1rem; /* Tamaño del título */
+  margin-bottom: 5px;
+}
+
+.card .info p {
+  font-size: 1rem; /* Tamaño del valor */
+  font-weight: bold;
 }
