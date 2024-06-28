@@ -2,23 +2,24 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import 'datatables.net-dt/css/dataTables.dataTables.css';
-
+// import $ from "jquery";
 
 function CovidTable() {
-  const [data, setData] = useState([]); //creo la constante data para guardar después la información de la API. Fijaros que es un array.
-
+const [data, setData] = useState([]); //creo la constante data para guardar después la información de la API. Fijaros que es un array.
   useEffect(() => { // usamos useEffect para hacer llamadas a funciones, en este caso a una llamada a una api con axios.
     axios.get('https://disease.sh/v3/covid-19/countries?sort=cases') // Llamo a la API mediante axios.get (get nos devuelve info ordenada por casos de mayor a menor)
       .then(response => { //entonces
-        setData(response.data); //seteamos la info que recuperamos en nuestra variable data.
-      })
-      .catch(error => { 
-        console.error('Error al obtener datos de la API:', error);
+        setData(response.data); //seteamos la info que recuperamos en nuestra variable de data
+        //       $(document).ready(function(){
+        //       $('#example').DataTable({               
+        //   });
+        // })
+      }).catch(error => { 
+            console.error('Error al obtener datos de la API:', error);
       });
   }, []);
-
   return (
-    <table> 
+    <table id="example" class ="display" cellspacing="0" width="100%"> 
       <thead>
         <tr>
           <th>Flag</th>
@@ -51,9 +52,6 @@ function CovidTable() {
       </tbody>
     </table>
   );
+
 };
-
 export default CovidTable;
-
-
-
