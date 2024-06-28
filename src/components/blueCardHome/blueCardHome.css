@@ -8,7 +8,7 @@
 .banner {
   background-position: center;
   background-size: cover;
-  height: 100vh;/* Altura de la pantalla completa */
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center; 

@@ -1,10 +1,13 @@
 import React from 'react';
 import Footer from './components/footerHome/FooterHome';
-
-const App = () => {
+import SlideCardHome from "./components/slideCardsHome/SlideCardHome"
+function App() {   
   return (
     <div>
-      <Footer />
+         <BlueCardHome />
+         <NavBarHome/>
+         <SlideCardHome/>
+         <Footer/>
     </div>
   );
 };
