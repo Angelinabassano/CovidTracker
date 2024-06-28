@@ -12,8 +12,7 @@ const List = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    //axios.get = ("https://disease.sh/v3/covid-19/all")
-     const Data = async () => {
+   const Data = async () => {
       try {
         const data = await getGlobalData();
         setGlobalStats(data);
