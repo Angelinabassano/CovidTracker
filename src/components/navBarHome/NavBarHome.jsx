@@ -20,13 +20,13 @@ function NavBarHome(){
         </div>
         
         <div className="rightNavbar">
-            <ul>
-                <li>Home</li>
-                <li>Prevention</li>
-                <li>Quarantine</li>
-                <li>Pages</li>
-                <li>About</li>
-                <li>Help</li>
+            <ul className="navbarUl">
+                <li className="navbarLi">Home</li>
+                <li className="navbarLi">Prevention</li>
+                <li className="navbarLi">Quarantine</li>
+                <li className="navbarLi">Pages</li>
+                <li className="navbarLi">About</li>
+                <li className="navbarLi">Help</li>
                 <button className="trackerNavbar">Tracker</button>
             </ul>
         </div>
