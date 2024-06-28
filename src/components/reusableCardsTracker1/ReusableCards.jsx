@@ -4,7 +4,8 @@ import "../../components/reusableCardsTracker1/reusableCards.css"
 
 const ReusableCards = ({ icon, label, value, color }) => {
   return (
-    <div className="reusableCardsContainer">
+    <>
+    
     <div className="card">
       <div className="info" >
         <h5 className="label">{label}</h5>
@@ -14,7 +15,8 @@ const ReusableCards = ({ icon, label, value, color }) => {
         <img className="imgIcon" src={icon} alt={label} /> 
       </div>
     </div>
-    </div>
+    
+    </>
   );
 };
 export default ReusableCards;
