@@ -2,7 +2,7 @@
 import imagesTracker1 from "../../utils/images/imagesTracker1.js";
 import reusableCardsImage from "../../utils/images/imagesTracker1.js";
 import ReusableCards from "./ReusableCards.jsx";
-
+import "../../components/reusableCardsTracker1/reusableCards.css"
 
 const List = () => {
   const infoCard = [
@@ -15,7 +15,7 @@ const List = () => {
    
   ];
   return (
-    <div >
+    <div className="cardsContainer">
       {infoCard.map((infoCard, index) => (
         <ReusableCards
           key={index}

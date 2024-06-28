@@ -2,11 +2,15 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-
+.cardsContainer{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
 .card{
     background-color: rgb(255, 255, 255);
-    width: 270px;
-    height:120px;
+    width: 258px;
+    height:103px;
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
@@ -27,11 +31,10 @@
     text-align: center;
 }
 .imgIcon{
-    width:140px;
-    height:140px;
+    width:130px;
+    height:130px;
     opacity: 0.2;
     position: relative;
     top: -24px;
     left: 24px;
-
 }
