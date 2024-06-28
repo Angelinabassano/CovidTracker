@@ -5,6 +5,7 @@ import "./components/navBarHome/navBarHome.css"
 import BlueCardHome from './components/blueCardHome/BlueCardHome';
 import Footer from './components/footerHome/FooterHome';
 import SlideCardHome from "./components/slideCardsHome/SlideCardHome"
+
 function App() {   
   
   return (
@@ -19,17 +20,18 @@ function App() {
   )
 }
 
-
-import List from './components/belowCardsTracker1/BelowCardsList.jsx';
-
-
-const App = () => {
-  return (
-    <div className="app">
-      <List />
-    </div>
-  );
-};
-
 export default App;
+
+// import List from './components/belowCardsTracker1/BelowCardsList.jsx';
+
+
+// const App = () => {
+//   return (
+//     <div className="app">
+//       <List />
+//     </div>
+//   );
+// };
+
+// export default App;
 
