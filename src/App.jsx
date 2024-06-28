@@ -1,13 +1,21 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import NavBarHome from "./components/navBarHome/NavBarHome";
+import "./components/navBarHome/navBarHome.css"
 import BlueCardHome from './components/blueCardHome/BlueCardHome';
+import Footer from './components/footerHome/FooterHome';
 
-function App() {
+function App() {   
   return (
-    <div className="App">
-      <BlueCardHome />
+    <>
+    <div>
+         <NavBarHome></NavBarHome>
+          <BlueCardHome />
+         <Footer />
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+
+export default App
