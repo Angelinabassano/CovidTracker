@@ -1,6 +1,5 @@
 import {  createBrowserRouter } from "react-router-dom";
-
-import  Tracker1  from "../views/tracker 1/Tracker1.jsx";
+import { Tracker1 } from "../views/tracker 1/Tracker1.jsx";
 import Tracker2   from "../views/tracker2/Tracker2.jsx"
 
 import App from "../App.jsx";
