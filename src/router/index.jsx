@@ -1,41 +1,31 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
-import Home from "../views/home/Home";
-import Tracker0 from '../layout/tracker0'
-import NavBarHome from "../components/navBarHome/NavBarHome";
+import {  createBrowserRouter } from "react-router-dom";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Outlet />,
-    },
-    {
-        path: "/",
-        element: <Home/>
-        ,
-    },
-    {
-        path: "taracker0",
-        element: <NavBarHome/>
-        ,
-    },
-    {
-        path: "taracker0",
-        element: <Tracker0/>
-        ,
-    },
-])
+import { Tracker1 } from "../views/tracker 1/Tracker1.jsx";
+import Tracker2   from "../views/tracker2/Tracker2.jsx"
 
-// const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <Root />,
-//       loader: rootLoader,
-//       children: [
-//         {
-//           path: "team",
-//           element: <Team />,
-//           loader: teamLoader,
-//         },
-//       ],
-//     },
-//   ]);
+import App from "../App.jsx";
+
+
+export const router = createBrowserRouter([
+       {
+      path: "/",
+       element: <App/>,
+        },
+         {
+            path: "/Tracker1",
+            element: <Tracker1></Tracker1>
+             
+         },
+         {
+            path: "/Tracker2",
+           element: <Tracker2></Tracker2>
+             ,
+         }
+       
+      
+     
+     
+   
+ ])
+
+

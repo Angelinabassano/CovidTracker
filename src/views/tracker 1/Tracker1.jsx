@@ -1,1 +1,7 @@
-// el parte de abajo de tracker1
+import React from 'react'
+
+export const Tracker1 = () => {
+  return (
+    <div>Tracker1</div>
+  )
+}
