@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { getGlobalData, } from "../../services/aplServices.jsx"
+import { getGlobalData, } from "../../services/apiService.jsx"
 import BelowCard from "./BelowCards.jsx";
 import Tracer1Images from "../../utils/images/imagesTracker1.js";
 import "../belowCardsTracker1/belowCards.css";
-//import axios? 
+
 
 
 const List = () => {
