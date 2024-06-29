@@ -1,7 +1,17 @@
 import React from 'react'
 
-export const Tracker1 = () => {
+import List from '../../components/belowCardsTracker1/BelowCardsList.jsx';
+
+ 
+ const Tracker1 = () => {
   return (
-    <div>Tracker1</div>
-  )
-}
+    <div className="tracker1">
+     <List/>
+    </div>
+  );
+};
+export default Tracker1;
+ 
+
+
+
