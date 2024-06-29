@@ -1,7 +1,12 @@
 import React from 'react'
 
+
+import SideBar from '../../layout/sidebar/SideBar'
 export const Tracker1 = () => {
   return (
-    <div>Tracker1</div>
+    <>
+    
+    <SideBar></SideBar>
+    </>
   )
 }
