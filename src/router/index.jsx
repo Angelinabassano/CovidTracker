@@ -19,6 +19,16 @@ export const router = createBrowserRouter([
             path: "/Tracker2",
            element: <Tracker2></Tracker2>
              ,
+         },
+         {
+            path: "/Tracker3",
+           element: <Tracker3></Tracker3>
+             ,
+         },
+         {
+            path: "/Tracker4",
+           element: <Tracker4></Tracker4>
+             ,
          }
        
       
