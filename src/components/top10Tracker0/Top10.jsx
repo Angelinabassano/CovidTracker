@@ -2,6 +2,7 @@ import React from 'react'
 import './top10.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+
   function GetData(){
   const [ TContry ,ContryData ] = useState([]);
     useEffect(()=>{
@@ -21,9 +22,9 @@ import axios from 'axios';
                         <div className="CountryContainer">
                             <div className="InfoData">
                                <div className="CT-Flag"><img  src={element.countryInfo.flag}/></div>
-                                <div className="CT-Country"><h4>{element.country}</h4></div>
+                                <div className="CT-Country"><p>{element.country}</p></div>
                             </div>
-                              <div className="CT-ConfirmedCase"><h4>{element.cases}</h4></div>
+                              <div className="CT-ConfirmedCase"><p>{element.cases}</p></div>
                          </div>
                       </div>
                      ): null

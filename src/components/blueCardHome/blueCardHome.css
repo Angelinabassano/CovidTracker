@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   align-items: center; 
   position: relative;
+  margin-left: -4%;
 }
 
 .banner .container {
