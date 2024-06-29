@@ -39,7 +39,7 @@ const List = () => {
   ];
 
   return (
-    <div className="wrapper">
+    <div className="container-2 wrapper">
       <div className="content">
       </div>
       <div className="stat-list">

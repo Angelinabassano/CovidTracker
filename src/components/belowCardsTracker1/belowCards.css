@@ -1,4 +1,5 @@
-body, html {
+.container-2 body, 
+.container-2 html {
   height: 100%;
   margin: 0;
   display: flex;
@@ -6,32 +7,42 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
+.container-2 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Asegura que el contenedor se mantenga en la parte inferior */
-  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  justify-content: center; /* Centramos verticalmente */
+  align-items: flex-end; /* Alineamos a la derecha */
+  height: 100vh;
+  padding-right: 20px;
 }
 
-.content {
+.container-2 .content {
   flex: 1;
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
 }
 
-.stat-list {
+.container-2 .stat-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-  grid-gap: 10px; /* Espacio entre las tarjetas */
-  justify-content: end; /* Alinea las tarjetas a la derecha */
-  padding: 10px; /* Espacio alrededor del contenedor de tarjetas */
-  margin-left: auto; /* Alinea todo el contenedor a la derecha */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-.stat-list > div:nth-child(4),
-.stat-list > div:nth-child(5) {
-  grid-column: span 1; /* Ocupan una columna cada una en la segunda fila */
+.container-2 .stat-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto; /* Alineamos a la derecha */
+  margin-right: 0; /* Aseguramos que no haya margen a la derecha */
 }
 
-.card {
+.container-2 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,37 +51,36 @@ body, html {
   border-radius: 8px;
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px; /* Ajusta el tamaño de las tarjetas */
-  height: 100px; /* Ajusta el tamaño de las tarjetas */
+  width: 200px;
+  height: 120px;
+  margin-left: auto; /* Alineamos a la derecha */
 }
-
-.card .icon {
+.container-2 .card .icon {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinea la imagen a la izquierda */
-  width: 100%; /* Asegura que el contenedor del icono ocupe todo el ancho de la tarjeta */
-  margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+  justify-content: center; /* Centramos el contenido */
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.card .icon .imagen {
-  width: 40px; /* Tamaño deseado para el ícono */
+.container-2 .card .icon .imagen {
+  width: 40px;
   height: 40px;
 }
 
-.card .info {
-  text-align: center; /* Alinea el texto a la izquierda */
+.container-2 .card .info {
+  text-align: center;
   width: 100%;
 }
 
-.card .info h3 {
-  font-size: 1rem; /* Tamaño del título */
+.container-2 .card .info h3 {
+  font-size: 1rem;
   margin-bottom: 5px;
-  color: #515184
-  
+  color: #515184;
 }
 
-.card .info p {
-  font-size: 1rem; /* Tamaño del valor */
+.container-2 .card .info p {
+  font-size: 1rem;
   font-weight: bold;
-  color:#121158
+  color: #121158;
 }
