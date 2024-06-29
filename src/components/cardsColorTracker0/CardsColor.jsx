@@ -13,7 +13,7 @@ const CardsColor =  () => {
     return (
       <>
     
-       <h2 className="title-text">COVID-19 Tracker</h2>
+       <h1 className="title-text">COVID-19 Tracker</h1>
         
           <CardCases
             key="total"

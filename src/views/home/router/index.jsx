@@ -1,4 +1,4 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Tracker0 from '../layout/tracker0'
 import NavBarHome from "../components/navBarHome/NavBarHome";
