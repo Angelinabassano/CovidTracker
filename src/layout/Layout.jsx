@@ -1,17 +1,26 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-import NavBarHome from '../components/navBarHome/NavBarHome'
 
+import App from '../../src/App'
+import { Outlet } from 'react-router-dom'
+// import NavBarHome from '../components/navBarHome/NavBarHome'
+
+//  import Home from '../views/home/Home'
+// import SlideCardHome from '../components/slideCardsHome/SlideCardHome'
+// import BlueCardHome from '../components/blueCardHome/BlueCardHome'
 
 
 
 const Layout = () => {
-  return (
-    <><NavBarHome> <Outlet/></NavBarHome>
-   
-    
+
+
+      return (
+    <>
+     
+     <App><Outlet></Outlet></App>
+     
     </>
-  )
+    )
+  
 }
 
-export default Layout
+export default Layout 
