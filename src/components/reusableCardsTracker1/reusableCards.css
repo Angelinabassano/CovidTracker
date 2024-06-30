@@ -1,7 +1,3 @@
-/* *, *::before, *::after {
-    box-sizing: border-box;
-    overflow: hidden;
-} */
 .selectCountry{
     width:200px;
     height: 30px;
