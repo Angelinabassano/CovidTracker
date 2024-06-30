@@ -1,17 +1,17 @@
 .container-2 body, 
 .container-2 html {
   height: 100%;
-  margin: 0;
+  margin-left: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   font-family: 'Poppins', sans-serif;
 }
 
 .container-2 .wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centramos verticalmente */
-  align-items: flex-end; /* Alineamos a la derecha */
+  flex-direction: row;
+  
+  /*align-items: flex-end; */
   height: 100vh;
   padding-right: 20px;
 }
@@ -19,41 +19,28 @@
 .container-2 .content {
   flex: 1;
   display: flex;
-  justify-content: center; /* Centramos horizontalmente */
+  
   align-items: center; /* Centramos verticalmente */
 }
 
-.container-2 .stat-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; /* Espacio entre las tarjetas */
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.container-2 .stat-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; /* Espacio entre las tarjetas */
-  padding: 20px;
-  max-width: 800px;
-  margin-left: auto; /* Alineamos a la derecha */
-  margin-right: 0; /* Aseguramos que no haya margen a la derecha */
+.stat-list{
+  display: flex;
+  flex-direction: row;
 }
 
 .container-2 .card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 120px;
-  margin-left: auto; /* Alineamos a la derecha */
+  width: 150px;
+  height: 100px;
+  
+  
 }
 .container-2 .card .icon {
   display: flex;
