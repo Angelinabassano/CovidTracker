@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 const ReusableCardsPage = () => {
 
-  const [selectedCountry, setSelectedCountry] = useState("Spain");
+  const [selectedCountry, setSelectedCountry] = useState("Afghanistan");
 
   function handleSelectCountry(event) {
     setSelectedCountry(event.target.value);
