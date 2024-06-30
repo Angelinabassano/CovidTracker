@@ -1,6 +1,6 @@
 import {  createBrowserRouter } from "react-router-dom";
 import App from "../App.jsx";
-import  Tracker1 from '../views/pageOne/Tracker1'
+import {Tracker1} from '../views/pageOne/Tracker1'
 import Tracker2 from "../views/pageTwo/Tracker2.jsx";
 import Tacker3 from "../views/pageThree/Tracker3.jsx";
 import Tracker4 from "../views/pageFour/Tracker4.jsx";
