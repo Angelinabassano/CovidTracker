@@ -21,13 +21,13 @@
   --building-color5: #1A73E8;
 }
 
-* , html{
+* , html, body{
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 div {
-  margin-left: 25px;
+  margin-left: 35px;
   align-items: center;
   justify-content: center;
 }
