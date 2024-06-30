@@ -7,6 +7,7 @@ const Tracker2 = () => {
     
     <SideBar></SideBar>
     <div>tacker2</div>
+    <div><CovidTable></CovidTable></div>
     </>
   )
 }
