@@ -11,19 +11,13 @@ import "./table.css";
 
 function CovidTable() {
 const [data, setData] = useState([]); //creo la constante data para guardar después la información de la API. Fijaros que es un array.
-
   useEffect(() => { // usamos useEffect para hacer llamadas a funciones, en este caso a una llamada a una api con axios
-
     axios.get("https://disease.sh/v3/covid-19/countries?sort=cases") // Llamo a la API mediante axios.get (get nos devuelve info ordenada por casos de mayor a menor)
         .then(response => { 
           setData(response.data); //seteamos la info que recuperamos en nuestra variable de datos
-
         if (!$.fn.DataTable.isDataTable("#covidTable")) {   //esto verifica si la tabla CovidTable(id) ha sido convertida en una DataTable, ed que se está aplicando DataTable a mi función
-
           $("#covidTable").DataTable({ // Si no ha sido inicializada como DataTable, aquí se inicializa.
-
             data: response.data, // Los datos que se van a mostrar en la tabla.
-
             columns: [
               {
                 data: "countryInfo.flag",
@@ -42,8 +36,7 @@ const [data, setData] = useState([]); //creo la constante data para guardar desp
               { data: "tests" },
             ],
             responsive: true, // Permite que la tabla sea responsive (adaptable a diferentes tamaños de pantalla).
-            destroy: true, // Destruye la tabla existente antes de crear una nueva DataTable.
-            
+            destroy: true, // Destruye la tabla existente antes de crear una nueva DataTable.           
           });
         } else {
           const table = $("#covidTable").DataTable(); // Obtiene la referencia a la DataTable existente
@@ -56,7 +49,6 @@ const [data, setData] = useState([]); //creo la constante data para guardar desp
           console.error("Error al obtener datos de la API:", error);
       });
   }, []);
-
   return (
     <div className="container mt-4">
     <h1 className="text-center mb-4">Ajax Data Table - Covid-19 Country Wise State</h1>  

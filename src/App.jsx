@@ -9,11 +9,11 @@ function App() {
   return (
     <>
     <div>
-        <BlueCardHome></BlueCardHome>
+        {/* <BlueCardHome></BlueCardHome>
         <NavBarHome></NavBarHome>
         <SliderCardHome></SliderCardHome>
-        <Footer></Footer>
-        <CovidTable/>
+        <Footer></Footer> */}
+        <CovidTable/> 
     </div>
     </>
   )
