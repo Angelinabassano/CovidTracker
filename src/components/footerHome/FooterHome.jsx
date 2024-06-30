@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
           </div>
           <div className="footer-section quick-links">
-                    <h4>Quic Links</h4>
+                    <h4>Quick Links</h4>
                         <ul>
                           <li>
                             <a href="https://covimap.dexignzone.com/xhtml/prevention.html">Prevention</a>

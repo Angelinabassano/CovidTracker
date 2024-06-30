@@ -1,4 +1,6 @@
-
+table-responsive{
+  overflow-x: auto;
+}
 img {
     width: 30px;
     height: 20px;

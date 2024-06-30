@@ -23,7 +23,7 @@ const [data, setData] = useState([]); //creo la constante data para guardar desp
                 data: "countryInfo.flag",
                 render: function(data) {
                     return `<img src="${data}" alt="flag" style="width: 30px; height: 20px;"/>`;
-                }
+                    }
                 },
                 { data: "country" },
                 { data: "cases" },
@@ -49,47 +49,45 @@ const [data, setData] = useState([]); //creo la constante data para guardar desp
             console.error("Error al obtener datos de la API:", error);
         });
     }, []);
+
     return (
-    <div className="container-fluid mt-4">
-        <div className="row">
-        <div className="col-lg-10 offset-lg-1">
-    <h1 className="text-center mb-4">Ajax Data Table - Covid-19 Country Wise State</h1>  
-    <table id="covidTable" className="table table-striped table-bordered dt-responsive nowrap" style={{ width: '100%' }}> 
-        <thead>
-        <tr>
-            <th>Flag</th>
-            <th>Country</th>
-            <th>Cases</th>
-            <th>New Cases</th>
-            <th>Deaths</th>
-            <th>New Deaths</th>
-            <th>Recoverd</th>
-            <th>Active</th>
-            <th>Critical</th>
-            <th>Tested</th>
-        </tr>
-        </thead>
-        <tbody>
-        {data.map((item, index) => (
-            <tr key={index}>
-                <td><img src={item.countryInfo.flag}/></td>
-                <td>{item.country}</td>
-                <td>{item.cases}</td>
-                <td>{item.todayCases}</td>
-                <td>{item.deaths}</td>
-                <td>{item.todayDeaths}</td>
-                <td>{item.recovered}</td>
-                <td>{item.active}</td>
-                <td>{item.critical}</td>
-                <td>{item.tests}</td>
-            </tr>
-        ))}
-        </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
+        <div className="main-content flex-grow-1 p-3">
+                        <h1 className="text-center mb-4">Ajax Data Table - Covid-19 Country Wise State</h1>  
+                        <table id="covidTable" className="table table-striped table-bordered dt-responsive nowrap" style={{ width: '100%' }}> 
+                            <thead>
+                                <tr>
+                                    <th>Flag</th>
+                                    <th>Country</th>
+                                    <th>Cases</th>
+                                    <th>New Cases</th>
+                                    <th>Deaths</th>
+                                    <th>New Deaths</th>
+                                    <th>Recoverd</th>
+                                    <th>Active</th>
+                                    <th>Critical</th>
+                                    <th>Tested</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map((item, index) => (
+                                    <tr key={index}>
+                                        <td><img src={item.countryInfo.flag}/></td>
+                                        <td>{item.country}</td>
+                                        <td>{item.cases}</td>
+                                        <td>{item.todayCases}</td>
+                                        <td>{item.deaths}</td>
+                                        <td>{item.todayDeaths}</td>
+                                        <td>{item.recovered}</td>
+                                        <td>{item.active}</td>
+                                        <td>{item.critical}</td>
+                                        <td>{item.tests}</td>
+                                        </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+              
     );
 
-};
+}
 export default CovidTable;
