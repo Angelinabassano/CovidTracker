@@ -1,13 +1,14 @@
 import React from 'react'
 import SideBar from '../../layout/sidebar/SideBar'
-const Tracker2 = () => {
+
+const Tracker6 = () => {
   return (
     <>
     
     <SideBar></SideBar>
-    <div>tacker2</div>
+    <div>tacker6</div>
     </>
   )
 }
 
-export default Tracker2
+export default Tracker6
