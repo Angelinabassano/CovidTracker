@@ -1,15 +1,16 @@
 import React from 'react'
-import './App.css'
-import NavBarHome from "./components/navBarHome/NavBarHome";
-import "./components/navBarHome/navBarHome.css"
-import Footer from './components/footerHome/FooterHome';
-
+import BlueCardHome from './components/blueCardHome/BlueCardHome'
+import NavBarHome from './components/navBarHome/NavBarHome'
+import SliderCardHome from './components/slideCardsHome/SlideCardHome'
+import Footer from './components/footerHome/FooterHome'
 function App() {   
   return (
     <>
     <div>
-         <NavBarHome></NavBarHome>
-         <Footer />
+        <BlueCardHome></BlueCardHome>
+        <NavBarHome></NavBarHome>
+        <SliderCardHome></SliderCardHome>
+        <Footer></Footer>
     </div>
     </>
   )
@@ -17,4 +18,7 @@ function App() {
 
 
 export default App
+
+
+
 

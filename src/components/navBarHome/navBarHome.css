@@ -1,3 +1,4 @@
+
 .nav{
     position: fixed;
     width: 100%;
@@ -6,7 +7,7 @@
     left:0;
     display: flex;
     justify-content: space-around;
-	background: rgb(157, 157, 214);
+	background: transparent;
     margin:0;
     color:white;
     align-items: center;
@@ -19,13 +20,13 @@
 .leftNavbar{
     padding: 20px;
 }
-ul{
+.navbarUl{
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
 }
-li{
+.navbarLi{
     list-style: none;
 }
 .trackerNavbar{
@@ -38,9 +39,6 @@ li{
     font-weight: bold;
     cursor: pointer;
 }
-p{
-    margin:100px;
-}
 .burgerNav{
     display:none;
 }
@@ -51,6 +49,6 @@ p{
         right: 5px;
     }
     .rightNavbar {
-      display: none;
+    display: none;
     }
   }

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import './navBarHome.css'
+import { NavLink } from "react-router-dom";
 
 function NavBarHome(){
     //change nav color when scrolling
@@ -20,14 +22,14 @@ function NavBarHome(){
         </div>
         
         <div className="rightNavbar">
-            <ul>
-                <li>Home</li>
-                <li>Prevention</li>
-                <li>Quarantine</li>
-                <li>Pages</li>
-                <li>About</li>
-                <li>Help</li>
-                <button className="trackerNavbar">Tracker</button>
+            <ul className="navbarUl">
+                <li className="navbarLi">Home</li>
+                <li className="navbarLi">Prevention</li>
+                <li className="navbarLi">Quarantine</li>
+                <li className="navbarLi">Pages</li>
+                <li className="navbarLi">About</li>
+                <li className="navbarLi">Help</li>
+                <NavLink to ='/Tracker1'><button  className="trackerNavbar">Tracker</button></NavLink>
             </ul>
         </div>
         <label className="burgerNav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
