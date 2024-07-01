@@ -14,15 +14,15 @@ function App() {
   return (
     <>
     <div>
-        {/* <BlueCardHome></BlueCardHome>
+        <BlueCardHome></BlueCardHome>
         <NavBarHome></NavBarHome>
         <SliderCardHome></SliderCardHome>
-        <Footer></Footer>  */}
-        <Sidebar/>
-        <CardCases/>
-        <CardsColor/>
-        <GetData/>
-        <CovidTable/>   
+        <Footer></Footer>  
+        {/* <Sidebar/>
+        <CardCases/> 
+        <CardsColor/> 
+        <GetData/> 
+        <CovidTable/>       */}
     </div>
     </>
   )
